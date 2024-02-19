@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" Starts a Flash Web Application """
+""" initiates a Flash Web Application """
 from flask import Flask
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def hello_hbnb():
-    """ Prints a Message when / is called """
+def hello():
+    """ Prints  Hello HBNB when / is called """
     return 'Hello HBNB!'
 
 if __name__ == "__main__":
